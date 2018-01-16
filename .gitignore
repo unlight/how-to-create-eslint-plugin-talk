@@ -1,0 +1,15 @@
+# dependencies
+/node_modules
+/.idea
+/.awcache
+/.vscode
+npm-debug.log
+/quick-start
+/coverage
+/.nyc_output
+/dist
+~*
+*.log*
+/.stryker-tmp/
+/.testresults
+/app_bin/
