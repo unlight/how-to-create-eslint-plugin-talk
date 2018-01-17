@@ -84,6 +84,6 @@ html:-moz-full-screen-ancestor {
     text-transform: none;
 }
 
-body[data-speaker-layout="tall"] #speaker-controls {
-    font-size: 1em;
+#speaker-controls {
+    font-size: 1em !important;
 }
