@@ -1,4 +1,20 @@
-## How to create ESLint plugin
+## Let's make ESLint plugin
+
+A brief introduction how to create your own ESLint plugin
 
 ---
 
+## Why?
+
+---
+
+## Types of issues
+
+1. Stylistic Issues
+2. Possible Errors
+
+Note:
+Есть два типа ошибок:
+стилистические - неправильное оформление, точка с запятой, пробелы между скобками у функций, пробелы после запятой в параметрах функций, пробелы или табы и т.д.
+ошибки в коде, которые ведут к неправильной работе кода или возможным падениям (runtime exceptions), утечкам памяти и т.д.
+Мы рассмотрим создание плагина для отлова ошибок 2-го типа, потому что это проще.
