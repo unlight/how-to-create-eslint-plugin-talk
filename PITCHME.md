@@ -31,7 +31,7 @@ Note:
 
 ## Example
 
-```javascript
+```typescript
 export class MathService {
 
     private logger = require('fancy-log');
