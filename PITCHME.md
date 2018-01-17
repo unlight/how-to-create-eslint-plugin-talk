@@ -8,7 +8,8 @@ Note:
 ---
 
 ## Why?
-* 
+* Lack of existing rules
+* Specific framework rules
 
 Note:
 Зачем?
@@ -50,3 +51,14 @@ export class MathService {
 
 Note:
 Что в этом коде не так? Какая здесь проблема?
+
+---
+
+## Your code is not a string
+
+
+---
+<!-- 
+Токены это объекты которые отражают какую-то конструкцию в коде
+У объекта есть как минимум одной своство type, которое указывает на тип
+-->
