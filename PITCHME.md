@@ -1,4 +1,4 @@
-## Let's make ESLint plugin
+## Let's make a ESLint plugin
 
 A brief introduction how to create your own ESLint plugin
 

@@ -10,4 +10,5 @@ highlight : atom-one-light
 logo : assets/image/logo.png
 transition : none
 published : false
+vertical-center : false
 # footnote : "GitPitch [ White ] Presentation Template"
