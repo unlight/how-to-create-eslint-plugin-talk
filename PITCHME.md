@@ -8,7 +8,7 @@ A brief introduction how to create your own ESLint plugin
 
 ---
 
-## Types of issues
+## Types of Issues
 
 1. Stylistic Issues
 2. Possible Errors

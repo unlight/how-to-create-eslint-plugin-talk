@@ -83,3 +83,7 @@ html:-moz-full-screen-ancestor {
 .reveal h6 {
     text-transform: none;
 }
+
+.reveal .controls {
+    display: none;
+}
