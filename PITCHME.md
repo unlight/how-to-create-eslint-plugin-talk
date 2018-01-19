@@ -61,8 +61,8 @@ Note:
 ## Our goal
 ```
 class {
-    ...
-    private logger = require('fancy-log'); /*eslint rule-id: "error"*/
+    // ...
+    private logger = require('fancy-log');
 }
 ```
 

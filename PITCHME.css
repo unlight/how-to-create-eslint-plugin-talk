@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic');
+
 /*
  * GitPitch Slideshow Custom CSS Styling
  *
@@ -86,4 +88,8 @@ html:-moz-full-screen-ancestor {
 
 #speaker-controls {
     font-size: 1em !important;
+}
+
+.reveal .slides > section {
+    font-family: 'PT Sans', sans-serif;
 }
