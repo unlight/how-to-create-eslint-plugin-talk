@@ -10,6 +10,7 @@
 * https://www.slideshare.net/Codemotion/gabriele-petronella-mythical-trees-and-where-to-find-them-codemotion-milan-2017
 * https://www.kenneth-truyers.net/2016/05/27/writing-custom-eslint-rules/
 * https://viswesh.github.io/astVisualizer/index.html
+* https://www.youtube.com/watch?v=XxhRwRHeGgs
 
 ##### GitPitch
 * https://raw.githubusercontent.com/gitpitch/kitchen-sink/master/PITCHME.md
