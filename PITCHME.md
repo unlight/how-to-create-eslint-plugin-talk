@@ -33,7 +33,7 @@ Note:
 
 ## Example
 
-+++?code=src/example/math.service.ts&lang=typescript
+?code=src/example/math.service.ts&lang=typescript
 
 @[5]
 
@@ -44,7 +44,7 @@ Note:
 Хорошо если если только в консоль, а то может и в файловую систему или системный журнал.
 Т.е. вместе с нашим классом мы будем тестировать еще этот логгер.
 
----
++++
 
 ## Our goal
 ```
@@ -81,7 +81,7 @@ ESLint использует парсер ESpree.
 
 ---
 
-## AST
+## Abstract Syntax Tree
 
 ```json
 {
