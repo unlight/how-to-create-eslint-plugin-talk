@@ -33,21 +33,9 @@ Note:
 
 ## Example
 
-```typescript
-export class MathService {
+---?code=src/example/math.service.ts&lang=typescript
 
-    private logger = require('fancy-log');
-
-    constructor() {
-        this.logger.info('Service created');
-    }
-
-    sum(a: number, b: number) {
-        this.logger.info('calculating sum for', a, b);
-        return a + b;
-    }
-}
-```
+@[5]
 
 Note:
 Что в этом коде не так? Какая здесь проблема?
@@ -62,7 +50,7 @@ Note:
 ```
 class {
     // ...
-    private logger = require('fancy-log');
+    private logger = new Logger();
 }
 ```
 
@@ -128,8 +116,13 @@ Note:
 У каждого объекта есть, есть по крайней мере свойство type, которое указывет на тип объекта.
 Здесь не полная информация, есть еще range которое отражают позицию начала и конца выражения,
 и loc содержит тоже самое, только содержит информацию про строки и колонки.
+Как видно, простое выражение разбивается на объект типа VariableDeclaration, у которого есть свойство declarations
+массив из объекта VariableDeclarator, если бы у меня было несколько объявлений переменных, то было бы соответсвующее количество
+элементов в массиве.
 
 ---
+
+## How ESLint works
 
 ![](http://www.plantuml.com/plantuml/img/JL1BQyCm3BuRz1zqR64DFOuSIal9JeEMjRSj1vEegI6nWwoqXRB_FgklnGTXVVeUifTHBClGjM1QEWXAG7RDKR1sJ9MuuC74ohQ4dRtW-toEPrVB4GoOoJhKD4KRyNvJJ3NMDubUx3wT5xo2mNI-jI5--_6htgLAKcMbIk-qTM1w48lOCr69izb26s5x8eu9o76rsuFvrPW3suvmsmwDyr4pRgXkyT2zN4imu-vfUylGqIWWonOlonoB4tc9O9w8Jl-D4k6B-i02PWIg-MGpI3_8DCUFm9sLz6hTRKc-Jh_y1m00)
 +++
