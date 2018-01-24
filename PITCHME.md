@@ -33,7 +33,7 @@ Note:
 
 ## Example
 
-?code=src/example/math.service.ts&lang=typescript
++++?code=src/example/math.service.ts&lang=typescript
 
 @[5]
 
