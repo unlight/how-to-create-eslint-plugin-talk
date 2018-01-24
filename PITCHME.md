@@ -60,7 +60,6 @@ Note:
 ---
 
 ## Your code is not a string
-Code:
 ```js
 const answer = 42
 ```
