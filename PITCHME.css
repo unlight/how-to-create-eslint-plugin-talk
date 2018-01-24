@@ -98,6 +98,6 @@ html:-moz-full-screen-ancestor {
     text-align: left;
 }
 
-.slides > section:nth-child(7) code {
+#abstract-syntax-tree + pre code {
     font-size: 0.9em;
 }
