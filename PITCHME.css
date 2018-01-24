@@ -93,3 +93,7 @@ html:-moz-full-screen-ancestor {
 .reveal .slides > section {
     font-family: 'PT Sans', sans-serif;
 }
+
+.reveal .slides {
+    text-align: left;
+}
