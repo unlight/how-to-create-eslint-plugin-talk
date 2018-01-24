@@ -97,3 +97,7 @@ html:-moz-full-screen-ancestor {
 .reveal .slides {
     text-align: left;
 }
+
+[data-index-h=6] pre {
+    font-size: 40%;
+}
