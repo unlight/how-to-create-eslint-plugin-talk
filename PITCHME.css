@@ -98,6 +98,6 @@ html:-moz-full-screen-ancestor {
     text-align: left;
 }
 
-[data-index-h=6] pre {
-    font-size: 35%;
+.slides > section:nth-child(6) {
+    font-size: 35% !important;
 }
