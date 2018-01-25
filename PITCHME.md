@@ -7,9 +7,20 @@ Note:
 
 ---
 
+## This talk is *NOT*
+* About parsing, tokenizing and lexing
+* *Everything* you need to know about AST
+
+Note:
+Написание плагина тесно связано с термином AST (Abstract Syntax Tree).
+Не будем говорить о парсинге, токенизации, лексинге. Я не знаю что-это такое.
+Анализ и преобразование кода с помощью AST - это довольно большая тема.
+---
+
 ## Why?
 * Lack of existing rules
-* Specific framework rules
+* Framework specific rules
+* Project specific rules
 
 Note:
 Зачем?
@@ -146,6 +157,18 @@ Code --> [ESLintCore]
 [Estraverse] ..> Plugins : Events
 Plugins ..> ESLintCore : Report
 ESLintCore --> (Output): Formatter
+
+@enduml
+```
+
++++
+```
+@startuml
+scale max 800 width
+
+[*] --> Lexer: Input
+Lexer --> Parser : Tokens
+Parser --> [*] : AST
 
 @enduml
 ```
