@@ -17,6 +17,13 @@
 * https://www.youtube.com/watch?v=N_Q3i3oaZ6w
 * https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Parser_API
 * https://www.youtube.com/watch?v=8uOXIM4giH8
+* http://www.oliverbudack.com/writing-custom-eslint-rules
+* https://gist.github.com/sindresorhus/1656c46f23545deff8cc713649dcff26
+* https://insideops.wordpress.com/2015/12/08/creating-custom-rules-for-eslint/
+* https://medium.com/@btegelund/creating-an-eslint-plugin-87f1cb42767f
+* https://flexport.engineering/writing-custom-lint-rules-for-your-picky-developers-67732afa1803
+* http://blog.cowchimp.com/writing-a-custom-eslint-rule-to-spot-undeclared-props/
+* https://www.sitepoint.com/understanding-asts-building-babel-plugin/
 
 ##### GitPitch
 * https://raw.githubusercontent.com/gitpitch/kitchen-sink/master/PITCHME.md
