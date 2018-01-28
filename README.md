@@ -3,6 +3,7 @@
 * https://docs.google.com/document/d/10VkzD6rE1QIoJYKutdv8PBOIXMtWN1L0BUQV__UJqQ8
 
 ## Resources
+* https://eslint.org/docs/developer-guide/architecture
 * http://sujoyu.github.io/plantuml-previewer/
 * https://hackernoon.com/how-linting-and-eslint-improve-code-quality-fa83d2469efe
 * https://blog.buildo.io/a-tour-of-abstract-syntax-trees-906c0574a067
@@ -24,6 +25,8 @@
 * https://flexport.engineering/writing-custom-lint-rules-for-your-picky-developers-67732afa1803
 * http://blog.cowchimp.com/writing-a-custom-eslint-rule-to-spot-undeclared-props/
 * https://www.sitepoint.com/understanding-asts-building-babel-plugin/
+* https://www.youtube.com/watch?v=XxhRwRHeGgs
+  - AST: https://youtu.be/XxhRwRHeGgs?t=1176
 
 ##### GitPitch
 * https://raw.githubusercontent.com/gitpitch/kitchen-sink/master/PITCHME.md
