@@ -99,7 +99,7 @@ Note:
 ```js
 const answer = 42
 ```
-```
+```text
 const        answer     =        42
 |         |             |   |                ||
 |         \_Identifier__/   \_____Literal____/|
