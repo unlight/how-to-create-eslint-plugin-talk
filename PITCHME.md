@@ -21,11 +21,13 @@ Note:
 * Lack of existing rules
 * Framework specific rules
 * Project specific rules
+* Convention tests
 
 Note:
 Зачем?
 Недостающий функционал (особенно во фреймворках).
-
+Иногда правила специфические для проекта называют Convention tests (конвеншн тестами).
+В JavaScript - одну и ту же вещь можно реализовать 10-ю разными способами
 ---
 
 ## Types of Issues
@@ -69,6 +71,27 @@ Note:
 Найти такую такую конструкцию и сообщить ESLint-у что здесь проблема.
 
 ---
+
+## Your code is not a string
+
+```js
+const a = 1 + 2;
+```
+
+1. Lexer/Tokenize(Input, Lexical Grammar) -> Tokens
+2. Parse(Tokens, Syntax Grammar) -> AST (Abstract Syntax Tree)
+
+Note:
+Чтобы без проблема анализировать код или преобразовывать в другой код, из него получить синтаксическое дерево (AST - Abstract Syntax Tree).
+1. Токенизация на этом этапе просто разбивается на тОкен
+2. Парсинг, из тОкенов и каких-то правил синтаксиса строится AST
+
++++
+
+## Your code is not a string
+
+
++++
 
 ## Your code is not a string
 ```js
@@ -191,4 +214,7 @@ Parser --> [*] : AST
 Чтобы создать плагин надо создать npm модуль с именем eslint-plugin-имя
 estraverse обходит дерево и вызывает функцию именем типа ноды, когда идет сверху внизу
     и вызывается функция с именем типа ноды и суффиксом :exit когда обход идет снизу вверх
+есть 2 тип событий: 1 тип ноды и тип ноды + exit 2-ой тип: т.н. называемый codepath
+    codepath (путь выполнения кода) тут https://eslint.org/docs/developer-guide/code-path-analysis
+    События пути выполнения кода, т.е. это когда встречаются if, switch, циклы, блоки и т.п.
 -->
