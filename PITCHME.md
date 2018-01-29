@@ -92,7 +92,6 @@ Note:
 
 ## Your code is not a string
 
-
 +++
 
 ## Your code is not a string
@@ -113,6 +112,36 @@ Note:
 Чтобы проанализировать код его надо преобразовать в так называемое абстрактное синтаксическое дерево (Abstract Syntax Tree) или AST.
 Есть много различных парсеров и на выходе получаются разные типы деревьев.
 ESLint использует парсер ESpree.
+
++++
+
+```
+@startuml
+
+scale max 800 height
+
+[const answer = Math.sin(3.14)] --> VariableDeclaration
+VariableDeclaration --> [const]: kind
+VariableDeclaration --> [answer = Math.sin(3.14)]: declarations
+[answer = Math.sin(3.14)] --> VariableDeclarator
+VariableDeclarator --> Identifier : id
+Identifier --> [answer]: name
+VariableDeclarator --> [Math.sin(3.14)] : init
+[Math.sin(3.14)] --> CallExpression
+CallExpression --> [Math.sin]: callee
+CallExpression --> [3.14]: arguments
+
+[3.14] ..> Literal
+
+() Identifier as ido
+[Math.sin] --> ido: object
+() Identifier as idp
+[Math.sin] --> idp: property
+ido --> [Math]: name
+idp --> [sin]: name
+
+@enduml
+```
 
 ---
 
