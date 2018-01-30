@@ -17,7 +17,6 @@
 * https://www.youtube.com/watch?v=CFQBHy8RCpg
 * https://www.youtube.com/watch?v=rFVODLIMdZE
 * https://www.youtube.com/watch?v=uvZTcLbOg8Q
-* https://www.youtube.com/watch?v=N_Q3i3oaZ6w
 * https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Parser_API
 * https://www.youtube.com/watch?v=8uOXIM4giH8
 * http://www.oliverbudack.com/writing-custom-eslint-rules
@@ -30,6 +29,7 @@
 * https://www.youtube.com/watch?v=XxhRwRHeGgs
   - AST: https://youtu.be/XxhRwRHeGgs?t=1176
 * https://eslint.org/docs/developer-guide/code-path-analysis
+* https://www.youtube.com/watch?v=Xt7PFzOBTPk
 
 ##### GitPitch
 * https://raw.githubusercontent.com/gitpitch/kitchen-sink/master/PITCHME.md
