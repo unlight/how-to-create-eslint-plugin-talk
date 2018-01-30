@@ -29,6 +29,7 @@
 * https://www.sitepoint.com/understanding-asts-building-babel-plugin/
 * https://www.youtube.com/watch?v=XxhRwRHeGgs
   - AST: https://youtu.be/XxhRwRHeGgs?t=1176
+* https://eslint.org/docs/developer-guide/code-path-analysis
 
 ##### GitPitch
 * https://raw.githubusercontent.com/gitpitch/kitchen-sink/master/PITCHME.md
