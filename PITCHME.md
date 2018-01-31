@@ -8,12 +8,12 @@ Note:
 ---
 
 ## This talk is *NOT*
-* About parsing, tokenizing and lexing
+* About parsing, tokenizing, lexing
 * *Everything* you need to know about AST
 
 Note:
 Написание плагина тесно связано с термином AST (Abstract Syntax Tree).
-Не будем говорить о парсинге, токенизации, лексинге. Я не знаю что-это такое.
+Не будем говорить о парсинге, токенизации. Я не знаю что-это такое.
 Анализ и преобразование кода с помощью AST - это довольно большая тема.
 
 ---
@@ -48,7 +48,7 @@ Note:
 
 ## Example
 
----?code=src/example/math.service.ts&lang=typescript
++++?code=src/example/math.service.ts&lang=typescript
 
 @[5]
 
@@ -59,7 +59,7 @@ Note:
 Хорошо если если только в консоль, а то может и в файловую систему или системный журнал.
 Т.е. вместе с нашим классом мы будем тестировать еще этот логгер.
 
----
++++
 
 ## Our goal
 ```
@@ -80,8 +80,8 @@ Note:
 const a = 1 + 2;
 ```
 
-1. Lexer/Tokenize(Input, Lexical Grammar) -> Tokens
-2. Parse(Tokens, Syntax Grammar) -> AST (Abstract Syntax Tree)
+1. `Lexer/Tokenize(Input, Lexical Grammar) -> Tokens`
+2. `Parse(Tokens, Syntax Grammar) -> AST (Abstract Syntax Tree)`
 
 Note:
 Чтобы без проблема анализировать код или преобразовывать в другой код, из него получить синтаксическое дерево (AST - Abstract Syntax Tree).
