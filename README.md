@@ -30,6 +30,7 @@
   - AST: https://youtu.be/XxhRwRHeGgs?t=1176
 * https://eslint.org/docs/developer-guide/code-path-analysis
 * https://www.youtube.com/watch?v=Xt7PFzOBTPk
+* https://github.com/cowchimp/awesome-ast
 
 ##### GitPitch
 * https://raw.githubusercontent.com/gitpitch/kitchen-sink/master/PITCHME.md
