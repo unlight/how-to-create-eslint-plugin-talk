@@ -1,16 +1,3 @@
-## Your code is not a string
-
-```js
-const answer = Math.sqrt(a + 1)
-```
-
-Note:
-Чтобы проанализировать код его надо преобразовать в так называемое абстрактное синтаксическое дерево (Abstract Syntax Tree) или AST.
-Есть много различных парсеров и на выходе получаются разные типы деревьев.
-ESLint использует парсер ESpree.
-
-+++
-
 @startuml
 
 [const answer = Math.sqrt(a + 1)] ..> VariableDeclaration
