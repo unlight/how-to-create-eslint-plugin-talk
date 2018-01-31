@@ -76,12 +76,10 @@ Note:
 
 ## Your code is not a string
 
-```js
-const a = 1 + 2;
-```
-
-1. `Lexer/Tokenize(Input, Lexical Grammar) --> Tokens`
-2. `Parse(Tokens, Syntax Grammar) --> AST (Abstract Syntax Tree)`
+1. `Lexer/Tokenize(Input, Lexical Grammar) -->  
+    Tokens`
+2. `Parse(Tokens, Syntax Grammar) -->  
+    AST (Abstract Syntax Tree)`
 
 Note:
 Чтобы без проблема анализировать код или преобразовывать в другой код, из него получить синтаксическое дерево (AST - Abstract Syntax Tree).
