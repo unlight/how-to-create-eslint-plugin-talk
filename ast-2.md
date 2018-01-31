@@ -1,11 +1,14 @@
+```uml
 @startuml
 
 [const answer = Math.sqrt(a + 1)] ..> VariableDeclaration
 
 @enduml
+```
 
 +++
 
+```uml
 @startuml
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
@@ -13,9 +16,11 @@ VariableDeclaration --> [const]: kind
 VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 
 @enduml
+```
 
 +++
 
+```uml
 @startuml
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
@@ -25,9 +30,11 @@ VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 [answer = Math.sqrt(a + 1)] ..> VariableDeclarator
 
 @enduml
+```
 
 +++
 
+```uml
 @startuml
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
@@ -39,9 +46,11 @@ VariableDeclarator --> [answer]: id
 VariableDeclarator --> [Math.sqrt(a + 1)]: init
 
 @enduml
+```
 
 +++
 
+```uml
 @startuml
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
@@ -56,9 +65,11 @@ VariableDeclarator --> [Math.sqrt(a + 1)]: init
 [Math.sqrt(a + 1)] ..> CallExpression
 
 @enduml
+```
 
 +++
 
+```uml
 @startuml
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
@@ -73,9 +84,11 @@ Identifier --> [answer]: name
 [Math.sqrt(a + 1)] ..> CallExpression
 
 @enduml
+```
 
 +++
 
+```uml
 @startuml
 scale max 800 height
 
@@ -95,9 +108,11 @@ CallExpression --> [a + 1]: arguments
 [a + 1] ..> BinaryExpression
 
 @enduml
+```
 
 +++
 
+```uml
 @startuml
 scale max 800 height
 
@@ -120,9 +135,11 @@ MemberExpression --> [Math]: object
 MemberExpression --> [sqrt]: property
 
 @enduml
+```
 
 +++
 
+```uml
 @startuml
 scale max 800 height
 
@@ -150,9 +167,11 @@ MemberExpression --> [sqrt]: property
 [sqrt] ..> Isqrt
 
 @enduml
+```
 
 +++
 
+```uml
 @startuml
 scale max 800 height
 
@@ -184,9 +203,11 @@ BinaryExpression --> [+]: operator
 BinaryExpression --> [1]: right
 
 @enduml
+```
 
 +++
 
+```uml
 @startuml
 scale max 800 height
 
@@ -222,9 +243,11 @@ BinaryExpression --> [1]: right
 [1] ..> Literal
 
 @enduml
+```
 
 +++
 
+```uml
 @startuml
 scale max 800 height
 
@@ -260,5 +283,4 @@ BinaryExpression --> Literal: right
 Literal --> [1]: value
 
 @enduml
-
-+++
+```
