@@ -83,63 +83,12 @@ Note:
 
 Note:
 Чтобы без проблема анализировать код или преобразовывать в другой код, из него получить синтаксическое дерево (AST - Abstract Syntax Tree).
-1. Токенизация на этом этапе строка просто разбивается на тОкены
+1. Токенизация, на этом этапе строка просто разбивается на тОкены
 2. Парсинг, из тОкенов и каких-то правил синтаксиса строится AST
 
 +++
 
-## Your code is not a string
-
-+++
-
-## Your code is not a string
-```js
-const answer = 42
-```
-```text
-const        answer     =        42
-|         |             |   |                ||
-|         \_Identifier__/   \_____Literal____/|
-|         |                                   |
-|         \_________VariableDeclarator________/
-|                                             |
-\______________VariableDeclaration____________/
-```
-
-Note:
-Чтобы проанализировать код его надо преобразовать в так называемое абстрактное синтаксическое дерево (Abstract Syntax Tree) или AST.
-Есть много различных парсеров и на выходе получаются разные типы деревьев.
-ESLint использует парсер ESpree.
-
-+++
-
-```uml
-@startuml
-
-scale max 800 height
-
-[const answer = Math.sin(3.14)] --> VariableDeclaration
-VariableDeclaration --> [const]: kind
-VariableDeclaration --> [answer = Math.sin(3.14)]: declarations
-[answer = Math.sin(3.14)] --> VariableDeclarator
-VariableDeclarator --> Identifier : id
-Identifier --> [answer]: name
-VariableDeclarator --> [Math.sin(3.14)] : init
-[Math.sin(3.14)] --> CallExpression
-CallExpression --> [Math.sin]: callee
-CallExpression --> [3.14]: arguments
-
-[3.14] ..> Literal
-
-() Identifier as ido
-[Math.sin] --> ido: object
-() Identifier as idp
-[Math.sin] --> idp: property
-ido --> [Math]: name
-idp --> [sin]: name
-
-@enduml
-```
+ast2
 
 ---
 
@@ -148,11 +97,9 @@ idp --> [sin]: name
 ```json
 {
     "type": "Program",
-    "sourceType": "script",
     "body": [
         {
             "type": "VariableDeclaration",
-            "kind": "const",
             "declarations": [
                 {
                     "type": "VariableDeclarator",
@@ -161,14 +108,41 @@ idp --> [sin]: name
                         "name": "answer"
                     },
                     "init": {
-                        "type": "Literal",
-                        "value": 42,
-                        "raw": "42"
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "Math"
+                            },
+                            "property": {
+                                "type": "Identifier",
+                                "name": "sqrt"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "BinaryExpression",
+                                "operator": "+",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "a"
+                                },
+                                "right": {
+                                    "type": "Literal",
+                                    "value": 1,
+                                    "raw": "1"
+                                }
+                            }
+                        ]
                     }
                 }
-            ]
+            ],
+            "kind": "const"
         }
-    ]
+    ],
+    "sourceType": "script"
 }
 ```
 
@@ -180,6 +154,7 @@ Note:
 Как видно, простое выражение разбивается на объект типа VariableDeclaration, у которого есть свойство declarations
 массив из объекта VariableDeclarator, если бы у меня было несколько объявлений переменных, то было бы соответсвующее количество
 элементов в массиве.
+http://esprima.org/demo/parse.html?code=const%20answer%20%3D%20Math.sqrt(a%20%2B%201)
 
 ---
 

@@ -101,8 +101,9 @@ html:-moz-full-screen-ancestor {
 #abstract-syntax-tree + pre code {
   font-size: 0.9em;
 }
-/*
+
 #your-code-is-not-a-string + ol li > code {
-  font-size: 0.8em;
+    font-family: monospace;
+    font-size: 0.9em;
 }
-*/
+
