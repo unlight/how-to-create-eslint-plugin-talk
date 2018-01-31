@@ -115,7 +115,7 @@ ESLint использует парсер ESpree.
 
 +++
 
-```
+```uml
 @startuml
 
 scale max 800 height
@@ -194,7 +194,7 @@ Note:
 
 +++
 
-```
+```uml
 @startuml
 left to right direction
 scale max 800 width
@@ -219,7 +219,7 @@ ESLintCore --> (Output): Formatter
 ```
 
 +++
-```
+```uml
 @startuml
 scale max 800 width
 
