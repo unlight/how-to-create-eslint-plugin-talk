@@ -99,73 +99,20 @@ Note:
 Есть много различных парсеров и на выходе получаются разные типы деревьев.
 ESLint использует парсер ESpree.
 
-+++?include=ast-2.md
++++?include=answer-ast.md
 
 ---
 
-## Abstract Syntax Tree
-
-```json
-{
-    "type": "Program",
-    "body": [
-        {
-            "type": "VariableDeclaration",
-            "declarations": [
-                {
-                    "type": "VariableDeclarator",
-                    "id": {
-                        "type": "Identifier",
-                        "name": "answer"
-                    },
-                    "init": {
-                        "type": "CallExpression",
-                        "callee": {
-                            "type": "MemberExpression",
-                            "computed": false,
-                            "object": {
-                                "type": "Identifier",
-                                "name": "Math"
-                            },
-                            "property": {
-                                "type": "Identifier",
-                                "name": "sqrt"
-                            }
-                        },
-                        "arguments": [
-                            {
-                                "type": "BinaryExpression",
-                                "operator": "+",
-                                "left": {
-                                    "type": "Identifier",
-                                    "name": "a"
-                                },
-                                "right": {
-                                    "type": "Literal",
-                                    "value": 1,
-                                    "raw": "1"
-                                }
-                            }
-                        ]
-                    }
-                }
-            ],
-            "kind": "const"
-        }
-    ],
-    "sourceType": "script"
-}
-```
+## AST Visual Tools
+* [astexplorer.net](https://astexplorer.net/#/gist/433bc0721837f6131015237244f42340/97b61c07409adf0fdb7ccaf7a8dc373cae39c353)
+* [esprima.org/demo/parse.html](http://esprima.org/demo/parse.html?code=const%20answer%20%3D%20Math.sqrt(a%20%2B%201))
+* [viswesh.github.io/astVisualizer](https://viswesh.github.io/astVisualizer/index.html)
 
 Note:
-Так выглядит AST в JSON виде.
-У каждого объекта есть, есть по крайней мере свойство type, которое указывет на тип объекта.
-Здесь не полная информация, есть еще range которое отражают позицию начала и конца выражения,
-и loc содержит тоже самое, только содержит информацию про строки и колонки.
-Как видно, простое выражение разбивается на объект типа VariableDeclaration, у которого есть свойство declarations
-массив из объекта VariableDeclarator, если бы у меня было несколько объявлений переменных, то было бы соответсвующее количество
-элементов в массиве.
-http://esprima.org/demo/parse.html?code=const%20answer%20%3D%20Math.sqrt(a%20%2B%201)
+Есть несколько онлайн инструментов которые позволяют посмотреть синтаксическое дерево.
+astexplorer.net, кроме него вам больше ничего не нужно.
+Можно выбрать язык (css, graphQL), парсер и другие.
+Можно навести мышкой на выражене, на плюс и оно будет сразу посдвечено справа.
 
 ---
 
@@ -175,6 +122,8 @@ http://esprima.org/demo/parse.html?code=const%20answer%20%3D%20Math.sqrt(a%20%2B
 
 Note:
 Упрощенная схема работы выглядит следующим образом.
+ESLint парсит код, создает AST, а дальше модуль ESTraverse его обходит.
+И ESTraverse сообщает об элементах, которые он встретит при обходит, правилам.
 
 +++
 
@@ -201,20 +150,6 @@ ESLintCore --> (Output): Formatter
 
 @enduml
 ```
-
-+++
-```uml
-@startuml
-scale max 800 width
-
-[*] --> Lexer: Input
-Lexer --> Parser : Tokens
-Parser --> [*] : AST
-
-@enduml
-```
-
----
 
 <!-- 
 Токены это объекты которые отражают какую-то конструкцию в коде
