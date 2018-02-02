@@ -280,7 +280,7 @@ BinaryExpression --> Literal: right
 
 () Identifier as Ia
 [a] ..> Ia
-Literal --> [1]: value
+Literal --> ["1"]: value
 
 @enduml
 ```
