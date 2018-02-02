@@ -80,7 +80,7 @@ VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 VariableDeclarator --> Identifier: id
 VariableDeclarator --> [Math.sqrt(a + 1)]: init
 
-Identifier --> [answer]: name
+Identifier --> ["answer"]: name
 [Math.sqrt(a + 1)] ..> CallExpression
 
 @enduml
@@ -100,7 +100,7 @@ VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 VariableDeclarator --> Identifier: id
 VariableDeclarator --> CallExpression: init
 
-Identifier --> [answer]: name
+Identifier --> ["answer"]: name
 CallExpression --> [Math.sqrt]: callee
 CallExpression --> [a + 1]: arguments
 
@@ -124,7 +124,7 @@ VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 VariableDeclarator --> Identifier: id
 VariableDeclarator --> CallExpression: init
 
-Identifier --> [answer]: name
+Identifier --> ["answer"]: name
 CallExpression --> [Math.sqrt]: callee
 CallExpression --> [a + 1]: arguments
 
@@ -151,7 +151,7 @@ VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 VariableDeclarator --> Identifier: id
 VariableDeclarator --> CallExpression: init
 
-Identifier --> [answer]: name
+Identifier --> ["answer"]: name
 CallExpression --> [Math.sqrt]: callee
 CallExpression --> [a + 1]: arguments
 
@@ -183,7 +183,7 @@ VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 VariableDeclarator --> Identifier: id
 VariableDeclarator --> CallExpression: init
 
-Identifier --> [answer]: name
+Identifier --> ["answer"]: name
 CallExpression --> [Math.sqrt]: callee
 CallExpression --> [a + 1]: arguments
 
@@ -219,7 +219,7 @@ VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 VariableDeclarator --> Identifier: id
 VariableDeclarator --> CallExpression: init
 
-Identifier --> [answer]: name
+Identifier --> ["answer"]: name
 CallExpression --> [Math.sqrt]: callee
 CallExpression --> [a + 1]: arguments
 
@@ -259,7 +259,7 @@ VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 VariableDeclarator --> Identifier: id
 VariableDeclarator --> CallExpression: init
 
-Identifier --> [answer]: name
+Identifier --> ["answer"]: name
 CallExpression --> [Math.sqrt]: callee
 CallExpression --> [a + 1]: arguments
 
