@@ -129,7 +129,7 @@ CallExpression --> [Math.sqrt]: callee
 CallExpression --> [a + 1]: arguments
 
 [Math.sqrt] --> MemberExpression
-[a + 1] --> BinaryExpression
+[a + 1] ..> BinaryExpression
 
 MemberExpression --> [Math]: object
 MemberExpression --> [sqrt]: property
@@ -156,7 +156,7 @@ CallExpression --> [Math.sqrt]: callee
 CallExpression --> [a + 1]: arguments
 
 [Math.sqrt] --> MemberExpression
-[a + 1] --> BinaryExpression
+[a + 1] ..> BinaryExpression
 
 MemberExpression --> [Math]: object
 MemberExpression --> [sqrt]: property
