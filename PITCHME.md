@@ -118,15 +118,6 @@ astexplorer.net, кроме него вам больше ничего не ну�
 
 ## How ESLint works
 
-![](http://www.plantuml.com/plantuml/img/JL1BQyCm3BuRz1zqR64DFOuSIal9JeEMjRSj1vEegI6nWwoqXRB_FgklnGTXVVeUifTHBClGjM1QEWXAG7RDKR1sJ9MuuC74ohQ4dRtW-toEPrVB4GoOoJhKD4KRyNvJJ3NMDubUx3wT5xo2mNI-jI5--_6htgLAKcMbIk-qTM1w48lOCr69izb26s5x8eu9o76rsuFvrPW3suvmsmwDyr4pRgXkyT2zN4imu-vfUylGqIWWonOlonoB4tc9O9w8Jl-D4k6B-i02PWIg-MGpI3_8DCUFm9sLz6hTRKc-Jh_y1m00)
-
-Note:
-Упрощенная схема работы выглядит следующим образом.
-ESLint парсит код, создает AST, а дальше модуль ESTraverse его обходит.
-И ESTraverse сообщает об элементах, которые он встретит при обходе, правилам.
-
-+++
-
 ```uml
 @startuml
 left to right direction
@@ -150,6 +141,11 @@ ESLintCore --> (Output): Formatter
 
 @enduml
 ```
+
+Note:
+Упрощенная схема работы выглядит следующим образом.
+ESLint парсит код, создает AST, а дальше модуль ESTraverse его обходит.
+И ESTraverse сообщает об элементах, которые он встретит при обходе, правилам.
 
 <!-- 
 Токены это объекты которые отражают какую-то конструкцию в коде
