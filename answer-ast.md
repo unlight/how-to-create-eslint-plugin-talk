@@ -108,7 +108,6 @@ CallExpression --> [a + 1]: arguments
 
 ```uml
 @startuml
-scale max 800 height
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
 VariableDeclaration --> ["const"]: kind
@@ -116,7 +115,7 @@ VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 
 [answer = Math.sqrt(a + 1)] --> VariableDeclarator
 VariableDeclarator --> Identifier: id
-VariableDeclarator --> CallExpression: init
+VariableDeclarator -> CallExpression: init
 
 Identifier --> ["answer"]: name
 CallExpression --> [Math.sqrt]: callee
@@ -132,7 +131,6 @@ CallExpression --> [a + 1]: arguments
 
 ```uml
 @startuml
-scale max 800 height
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
 VariableDeclaration --> ["const"]: kind
@@ -140,7 +138,7 @@ VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 
 [answer = Math.sqrt(a + 1)] --> VariableDeclarator
 VariableDeclarator --> Identifier: id
-VariableDeclarator --> CallExpression: init
+VariableDeclarator -> CallExpression: init
 
 Identifier --> ["answer"]: name
 CallExpression --> [Math.sqrt]: callee
@@ -159,7 +157,6 @@ MemberExpression --> [sqrt]: property
 
 ```uml
 @startuml
-scale max 800 height
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
 VariableDeclaration --> ["const"]: kind
@@ -167,7 +164,7 @@ VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 
 [answer = Math.sqrt(a + 1)] --> VariableDeclarator
 VariableDeclarator --> Identifier: id
-VariableDeclarator --> CallExpression: init
+VariableDeclarator -> CallExpression: init
 
 Identifier --> ["answer"]: name
 CallExpression --> [Math.sqrt]: callee
@@ -191,7 +188,6 @@ MemberExpression --> [sqrt]: property
 
 ```uml
 @startuml
-scale max 800 height
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
 VariableDeclaration --> ["const"]: kind
@@ -199,7 +195,7 @@ VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 
 [answer = Math.sqrt(a + 1)] --> VariableDeclarator
 VariableDeclarator --> Identifier: id
-VariableDeclarator --> CallExpression: init
+VariableDeclarator -> CallExpression: init
 
 Identifier --> ["answer"]: name
 CallExpression --> [Math.sqrt]: callee
@@ -227,7 +223,6 @@ BinaryExpression --> [1]: right
 
 ```uml
 @startuml
-scale max 800 height
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
 VariableDeclaration --> ["const"]: kind
@@ -235,7 +230,7 @@ VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 
 [answer = Math.sqrt(a + 1)] --> VariableDeclarator
 VariableDeclarator --> Identifier: id
-VariableDeclarator --> CallExpression: init
+VariableDeclarator -> CallExpression: init
 
 Identifier --> ["answer"]: name
 CallExpression --> [Math.sqrt]: callee
@@ -267,7 +262,6 @@ BinaryExpression --> [1]: right
 
 ```uml
 @startuml
-scale max 800 height
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
 VariableDeclaration --> ["const"]: kind
@@ -275,7 +269,7 @@ VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 
 [answer = Math.sqrt(a + 1)] --> VariableDeclarator
 VariableDeclarator --> Identifier: id
-VariableDeclarator --> CallExpression: init
+VariableDeclarator -> CallExpression: init
 
 Identifier --> ["answer"]: name
 CallExpression --> [Math.sqrt]: callee
