@@ -24,7 +24,7 @@ VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 @startuml
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
-VariableDeclaration --> [const]: kind
+VariableDeclaration --> ["const"]: kind
 VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 
 [answer = Math.sqrt(a + 1)] ..> VariableDeclarator
@@ -38,7 +38,7 @@ VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 @startuml
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
-VariableDeclaration --> [const]: kind
+VariableDeclaration --> ["const"]: kind
 VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 
 [answer = Math.sqrt(a + 1)] --> VariableDeclarator
@@ -54,7 +54,7 @@ VariableDeclarator --> [Math.sqrt(a + 1)]: init
 @startuml
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
-VariableDeclaration --> [const]: kind
+VariableDeclaration --> ["const"]: kind
 VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 
 [answer = Math.sqrt(a + 1)] --> VariableDeclarator
@@ -73,7 +73,7 @@ VariableDeclarator --> [Math.sqrt(a + 1)]: init
 @startuml
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
-VariableDeclaration --> [const]: kind
+VariableDeclaration --> ["const"]: kind
 VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 
 [answer = Math.sqrt(a + 1)] --> VariableDeclarator
@@ -93,7 +93,7 @@ Identifier --> ["answer"]: name
 scale max 800 height
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
-VariableDeclaration --> [const]: kind
+VariableDeclaration --> ["const"]: kind
 VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 
 [answer = Math.sqrt(a + 1)] --> VariableDeclarator
@@ -117,7 +117,7 @@ CallExpression --> [a + 1]: arguments
 scale max 800 height
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
-VariableDeclaration --> [const]: kind
+VariableDeclaration --> ["const"]: kind
 VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 
 [answer = Math.sqrt(a + 1)] --> VariableDeclarator
@@ -144,7 +144,7 @@ MemberExpression --> [sqrt]: property
 scale max 800 height
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
-VariableDeclaration --> [const]: kind
+VariableDeclaration --> ["const"]: kind
 VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 
 [answer = Math.sqrt(a + 1)] --> VariableDeclarator
@@ -176,7 +176,7 @@ MemberExpression --> [sqrt]: property
 scale max 800 height
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
-VariableDeclaration --> [const]: kind
+VariableDeclaration --> ["const"]: kind
 VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 
 [answer = Math.sqrt(a + 1)] --> VariableDeclarator
@@ -212,7 +212,7 @@ BinaryExpression --> [1]: right
 scale max 800 height
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
-VariableDeclaration --> [const]: kind
+VariableDeclaration --> ["const"]: kind
 VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 
 [answer = Math.sqrt(a + 1)] --> VariableDeclarator
@@ -252,7 +252,7 @@ BinaryExpression --> [1]: right
 scale max 800 height
 
 [const answer = Math.sqrt(a + 1)] --> VariableDeclaration
-VariableDeclaration --> [const]: kind
+VariableDeclaration --> ["const"]: kind
 VariableDeclaration --> [answer = Math.sqrt(a + 1)]: declarations
 
 [answer = Math.sqrt(a + 1)] --> VariableDeclarator
