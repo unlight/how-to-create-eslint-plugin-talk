@@ -105,7 +105,7 @@ ESLint использует парсер ESpree.
 
 ## AST Visual Tools
 * [astexplorer.net](https://astexplorer.net/#/gist/433bc0721837f6131015237244f42340/97b61c07409adf0fdb7ccaf7a8dc373cae39c353)
-* [esprima.org/demo/parse.html]("http://esprima.org/demo/parse.html?code=const%20answer%20%3D%20Math.sqrt(a%20%2B%201)")
+* [esprima.org/demo/parse.html](http://esprima.org/demo/parse.html?code=const%20answer%20%3D%20Math.sqrt%28a%20%2B%201%29)
 * [viswesh.github.io/astVisualizer](https://viswesh.github.io/astVisualizer/index.html)
 
 Note:
