@@ -112,3 +112,7 @@ html:-moz-full-screen-ancestor {
     border-width: 0px;
     box-shadow: none;
 }
+
+.reveal pre img:only-child {
+    margin: 0 !important;
+}
