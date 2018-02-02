@@ -113,6 +113,6 @@ html:-moz-full-screen-ancestor {
     box-shadow: none;
 }
 
-.reveal pre img:only-child {
+.reveal pre {
     margin: 0 !important;
 }
