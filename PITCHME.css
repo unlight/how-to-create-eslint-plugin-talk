@@ -107,3 +107,8 @@ html:-moz-full-screen-ancestor {
     font-size: 0.9em;
 }
 
+.reveal section img {
+    max-height: 65vh;
+    border-width: 0px;
+    box-shadow: none;
+}
