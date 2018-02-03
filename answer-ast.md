@@ -298,6 +298,7 @@ Literal --> ["1"]: value
 ```
 
 ---
+
 ## Abstract Syntax Tree
 
 ```js
@@ -365,5 +366,3 @@ Note:
 Как видно, простое выражение разбивается на объект типа VariableDeclaration, у которого есть свойство declarations
 массив из объекта VariableDeclarator, если бы у меня было несколько объявлений переменных, то было бы соответсвующее количество
 элементов в массиве. http://esprima.org/demo/parse.html?code=const%20answer%20%3D%20Math.sqrt(a%20%2B%201)
-
-+++
