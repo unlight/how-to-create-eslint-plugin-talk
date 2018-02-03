@@ -98,7 +98,7 @@ html:-moz-full-screen-ancestor {
     text-align: left;
 }
 
-#abstract-syntax-tree + pre code {
+#abstract-syntax-tree + pre + pre code {
   font-size: 0.9em;
 }
 
