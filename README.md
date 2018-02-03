@@ -31,8 +31,9 @@
 * https://eslint.org/docs/developer-guide/code-path-analysis
 * https://www.youtube.com/watch?v=Xt7PFzOBTPk
 * https://github.com/cowchimp/awesome-ast
+* https://eslint.org/docs/developer-guide/working-with-plugins
 
-##### GitPitch
+#### GitPitch
 * https://raw.githubusercontent.com/gitpitch/kitchen-sink/master/PITCHME.md
 * https://github.com/gitpitch/gitpitch/wiki/Slideshow-Settings
 * https://github.com/gitpitch/gitpitch/wiki/Speaker-Notes-Window

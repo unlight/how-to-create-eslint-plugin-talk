@@ -10,7 +10,7 @@ export class MathService {
 
     sum(a: number, b: number) {
         this.logger.info('calculating sum for', a, b);
-        const result = a + b; // +0 for fixer demo
+        const result = a + b;
         return result;
     }
 }

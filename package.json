@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "eslint:example": "eslint --ext=ts src/example",
-    "tsc:class-name:w": "tsc --lib es2017 --watch src/class-name/class-name.ts",
-    "eslint:example:class-name": "eslint --ext=ts --rulesdir=src/class-name/ --rule \"class-name: 1\" src/example/animal-class.ts"
+    "tsc:rules:w": "tsc --lib es2017 --watch src/class-name/class-name.ts src/tight-coupling/tight-coupling.ts",
+    "eslint:example:class-name": "eslint --ext=ts --rulesdir=src/class-name/ --rule \"class-name: 1\" src/example/animal-class.ts",
+    "eslint:example:tight-coupling": "eslint --ext=ts --rulesdir=src/tight-coupling/ --rule \"tight-coupling: [1, \"log4js\"]\" src/example/math.service.ts"
   },
   "keywords": [],
   "license": "ISC",
@@ -13,7 +14,7 @@
     "@types/estree": "0.0.38",
     "@types/fancy-log": "1.3.0",
     "@types/node": "9.4.0",
-    "eslint": "4.16.0",
+    "eslint": "4.17.0",
     "fancy-log": "1.3.2",
     "ts-node": "4.1.0",
     "tslib": "1.9.0",
