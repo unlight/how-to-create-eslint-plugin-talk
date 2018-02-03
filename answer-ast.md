@@ -364,5 +364,4 @@ Note:
 и loc содержит тоже самое, только содержит информацию про строки и колонки.
 Как видно, простое выражение разбивается на объект типа VariableDeclaration, у которого есть свойство declarations
 массив из объекта VariableDeclarator, если бы у меня было несколько объявлений переменных, то было бы соответсвующее количество
-элементов в массиве.
-http://esprima.org/demo/parse.html?code=const%20answer%20%3D%20Math.sqrt(a%20%2B%201)
+элементов в массиве. http://esprima.org/demo/parse.html?code=const%20answer%20%3D%20Math.sqrt(a%20%2B%201)
