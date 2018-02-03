@@ -108,6 +108,76 @@ const answer = Math.sqrt(a + 1)
 
 ---
 
+## Abstract Syntax Tree
+
+```js
+const answer = Math.sqrt(a + 1)
+```
+
+```json
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "answer"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "Math"
+                            },
+                            "property": {
+                                "type": "Identifier",
+                                "name": "sqrt"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "BinaryExpression",
+                                "operator": "+",
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "a"
+                                },
+                                "right": {
+                                    "type": "Literal",
+                                    "value": 1,
+                                    "raw": "1"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "const"
+        }
+    ],
+    "sourceType": "script"
+}
+```
+
+Note:
+Так выглядит AST в JSON виде.
+Такое простое выражение разложилось на 50 строчек json.
+У каждого объекта есть, есть по крайней мере свойство type, которое указывет на тип объекта.
+Здесь не полная информация, есть еще range которое отражают позицию начала и конца выражения,
+и loc содержит тоже самое, только содержит информацию про строки и колонки.
+Как видно, простое выражение разбивается на объект типа VariableDeclaration, у которого есть свойство declarations
+массив из объекта VariableDeclarator, если бы у меня было несколько объявлений переменных, то было бы соответсвующее количество
+элементов в массиве. http://esprima.org/demo/parse.html?code=const%20answer%20%3D%20Math.sqrt(a%20%2B%201)
+
+---
+
 ## AST Visual Tools
 * [astexplorer.net](https://astexplorer.net/#/gist/433bc0721837f6131015237244f42340/97b61c07409adf0fdb7ccaf7a8dc373cae39c353)
 * [esprima.org/demo/parse.html](http://esprima.org/demo/parse.html?code=const%20answer%20%3D%20Math.sqrt%28a%20%2B%201%29)
