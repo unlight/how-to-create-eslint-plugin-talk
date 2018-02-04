@@ -3,18 +3,7 @@
 A brief introduction how to create your own ESLint plugin
 
 Note:
-Как создать свой ESLint плагин.
-
----
-
-## This talk is *NOT*
-* About parsing, tokenizing, lexing
-* *Everything* you need to know about AST
-
-Note:
-Написание плагина тесно связано с термином AST (Abstract Syntax Tree).
-Не будем говорить о парсинге, токенизации. Я не знаю что-это такое.
-Анализ и преобразование кода с помощью AST - это довольно большая тема.
+Как создать свой ESLint плагин со своими правилами.
 
 ---
 
