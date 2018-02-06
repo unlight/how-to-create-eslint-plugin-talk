@@ -258,6 +258,7 @@ processors - позволяет парсить другие типы файло�
 
 ## Rule implementation
 
+```ts
 export = (context) => ({
 
     ClassDeclaration(node: ClassDeclaration) {
@@ -266,6 +267,7 @@ export = (context) => ({
 
     OtherNodeType() { /* ... */ },
 });
+```
 
 Note:
 Имплементация (src\class-name\class-name.ts)
