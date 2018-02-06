@@ -265,7 +265,7 @@ export = (context) => ({
         console.log('ClassDeclaration');
     },
 
-    OtherNodeType() { /* ... */ },
+    OtherNodeType(node) { /* ... */ },
 });
 ```
 
