@@ -255,6 +255,8 @@ npm run eslint:example:class-name
 
 +++?code=src/example/animal-class.service.ts&lang=typescript
 
+Note:
+
 --- 
 
 ## Example 2
