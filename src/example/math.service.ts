@@ -8,7 +8,7 @@ export class MathService {
         this.logger.info('Service created');
     }
 
-    calcHypotenuse(a, b) {
+    calcHypotenuse(a: number, b: number) {
         this.logger.info('calculating result', a, b);
         return Math.sqrt((a * a) + (b * b));
     }
