@@ -11,7 +11,9 @@ const create = (context) => ({
                 node,
                 message: 'Do not use `Class` suffix in class names',
                 fix: (fixer) => {
-                    node.id.name = node.id.name.slice(0, -5);
+                    const newName = node.id.name.slice(0, -5);
+                    const range = node.id.range;
+                    return fixer.replaceTextRange(range, newName);
                 }
             });
 
