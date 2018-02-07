@@ -1,10 +1,11 @@
-export = (context) => ({
+export = (context) => {
+    const { options } = context;
+    return {
+        ClassProperty: (node) => {
 
-    ClassProperty: (node) => {
-
-        if (node.value && node.value.type === 'NewExpression') {
-            context.report({ node, message: 'Pass dependency through constructor' });
+            if (node.value && node.value.type === 'NewExpression') {
+                context.report({ node, message: 'Pass dependency through constructor' });
+            }
         }
-
-    }
-});
+    };
+};

@@ -1,15 +1,21 @@
 import { ClassDeclaration, MethodDefinition } from 'estree';
 
-export = (context) => ({
-
+const create = (context) => ({
     ClassDeclaration(node: ClassDeclaration) {
         console.log('ClassDeclaration');
-        // if (!node.id || node.id.type !== 'Identifier') {
-        //     return;
-        // }
-        // if (node.id.name && node.id.name.endsWith('Class')) {
-        //     context.report({ node, message: 'Do not use `Class` suffix in class names' });
-        // }
+        if (!node.id || node.id.type !== 'Identifier') {
+            return;
+        }
+        if (node.id.name && node.id.name.endsWith('Class')) {
+            context.report({
+                node,
+                message: 'Do not use `Class` suffix in class names',
+                fix: (fixer) => {
+                    node.id.name = node.id.name.slice(0, -5);
+                }
+            });
+
+        }
     },
 
     MethodDefinition(node: MethodDefinition) {
@@ -20,3 +26,10 @@ export = (context) => ({
         console.log('MethodDefinition:exit');
     },
 });
+
+export = {
+    create,
+    meta: {
+        fixable: 'code'
+    }
+};
