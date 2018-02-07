@@ -253,7 +253,7 @@ npm run eslint:example:class-name
 
 ## Example
 
-+++?code=src/example/animal-class.service.ts&lang=typescript
++++?code=src/example/animal-class.ts&lang=typescript
 
 Note:
 
