@@ -1,6 +1,8 @@
-export class AnimalClass {
+import { Creature } from './creature';
 
-    eat() {
+export class AnimalClass extends Creature {
+
+    eatImpl() {
         console.log('eating...');
     }
 

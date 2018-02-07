@@ -8,9 +8,8 @@ export class MathService {
         this.logger.info('Service created');
     }
 
-    sum(a: number, b: number) {
-        this.logger.info('calculating sum for', a, b);
-        const result = a + b;
-        return result;
+    calcHypotenuse(a, b) {
+        this.logger.info('calculating result', a, b);
+        return Math.sqrt((a * a) + (b * b));
     }
 }

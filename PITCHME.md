@@ -253,9 +253,11 @@ npm run eslint:example:class-name
 
 ## Example
 
-+++?code=src/example/animal-class.ts&lang=typescript
++++?code=src/example/math.service.ts&lang=typescript
 
 Note:
+Пример, у нас есть такой класс. Используется в приложении типа калькулятор.
+Кто скажет какая здесь проблема?
 
 --- 
 
