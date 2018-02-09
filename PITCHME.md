@@ -231,7 +231,7 @@ processors - позволяет парсить другие типы файло�
 ## Rule implementation
 
 ```ts
-export = (context) => ({
+module.exports = (context) => ({
 
     ClassDeclaration(node: ClassDeclaration) {
         console.log('ClassDeclaration');

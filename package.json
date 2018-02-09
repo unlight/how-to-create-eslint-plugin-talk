@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "eslint:example": "eslint --ext=ts src/example",
-    "tsc:rules:w": "tsc --lib es2017 --watch src/class-name/class-name.ts src/tight-coupling/tight-coupling.ts",
-    "eslint:example:class-name": "eslint --ext=ts --rulesdir=src/class-name/ --rule \"class-name: 1\" src/example/animal-class.ts",
-    "eslint:example:tight-coupling": "eslint --ext=ts --rulesdir=src/tight-coupling/ --rule \"tight-coupling: [1, \"log4js\"]\" src/example/math.service.ts"
+    "eslint:example:class-name": "eslint --ext=ts --rulesdir=src/rules/ --rule \"class-name: 1\" src/example/animal-class.ts",
+    "eslint:example:tight-coupling": "eslint --ext=ts --rulesdir=src/rules/ --rule \"tight-coupling: [1, \"log4js\"]\" src/example/math.service.ts"
   },
   "keywords": [],
   "license": "ISC",
