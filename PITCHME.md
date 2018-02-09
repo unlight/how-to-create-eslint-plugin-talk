@@ -250,8 +250,13 @@ Note:
 npm run eslint:example:class-name
 
 ---
+## Example 1
 
-## Example
++++?code=src/example/animal-class.ts&lang=typescript
+
+---
+
+## Example 2
 
 +++?code=src/example/math.service.ts&lang=typescript
 
