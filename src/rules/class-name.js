@@ -1,6 +1,5 @@
 const create = (context) => ({
     ClassDeclaration(node) {
-        console.log('ClassDeclaration');
         if (!node.id || node.id.type !== 'Identifier') {
             return;
         }
@@ -16,14 +15,6 @@ const create = (context) => ({
             });
 
         }
-    },
-
-    MethodDefinition(node) {
-        console.log('MethodDefinition');
-    },
-
-    'MethodDefinition:exit'(node) {
-        console.log('MethodDefinition:exit');
     },
 });
 

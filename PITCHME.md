@@ -258,7 +258,7 @@ Note:
 Простой пример. Есть класс которая описывает кота.
 И в имени класса используется суффикс - класс.
 Давайте напишем такое правило, которое будет запрещать имя класса оканчивалось на 'class'.
-
+Перейдем на astexplorer.net
 
 ---
 
@@ -278,6 +278,15 @@ Note:
 Т.е. вместе с нашим классом мы будем тестировать еще этот логгер.
 2. Вот эта может быть записана как Math.hypot()
 
+---
+
+## Links
+
+* https://eslint.org/docs/developer-guide/working-with-plugins
+* https://gist.github.com/sindresorhus/1656c46f23545deff8cc713649dcff26
+* https://github.com/cowchimp/awesome-ast
+* https://www.youtube.com/watch?v=CFQBHy8RCpg
+* https://github.com/estools/escope
 
 <!-- 
 Токены это объекты которые отражают какую-то конструкцию в коде
