@@ -1,9 +1,10 @@
-# Creating a ESLint plugin
+# Creating a custom ESLint rules
 
-A brief introduction how to create your own ESLint plugin
+A brief introduction how to create your own ESLint rules
 
 Note:
 Как создать свой ESLint плагин со своими правилами.
+Для начала небольшая теория.
 
 ---
 
@@ -14,8 +15,9 @@ Note:
 * Convention tests
 
 Note:
-Зачем?
+Зачем может понадобиться создавать свои правила?
 Недостающий функционал (особенно во фреймворках).
+Во фреймворках как правило бывают, какие-то бест практики, и написав свое правило, можно заставить эти практики применять.
 Иногда правила специфические для проекта называют Convention tests (конвеншн тестами).
 В JavaScript - одну и ту же вещь можно реализовать 10-ю разными способами.
 
@@ -65,6 +67,7 @@ ESLint использует парсер ESpree.
 Note: 
 Как это работает.
 const answer = Math.sqrt(a + 1)
+Вот так выглядит визуализация синтаксического дерева.
 ...
 
 ---
