@@ -10,14 +10,17 @@ RuleTester.setDefaultConfig({
     },
 });
 
-const { rule } = require('./tight-coupling');
-const message = '';
+const rule = require('../rules/tight-coupling');
+const message = 'Pass dependency through constructor';
 
-ruleTester.run('use-validation-pipe', rule, {
+ruleTester.run('tight-coupling', rule, {
     invalid: [
-        { code: `class { @Post() async create(@Body() createCatDto: CreateCatDto) { } }`, errors: [{ message }] },
+        { code: `class Class { logger = new Logger() }`, errors: [{ message }] },
     ],
     valid: [
-        { code: `class { @Post() @UsePipes(new ValidationPipe()) async create(@Body() createCatDto: CreateCatDto) { } }` },
+        { code: `class Class { }` },
+        { code: `class Class { constructor(logger) { } }` },
+        { code: `class Class { logger = new FancyLogger() }`, options: ['FancyLogger'] },
+
     ],
 });
