@@ -272,9 +272,30 @@ Note:
 
 ## How to test
 
+```js
+const { RuleTester } = require('eslint');
+const ruleTester = new RuleTester({ options });
+
+const rule = require('../rules/class-name');
+
+ruleTester.run('rule name', rule, {
+    invalid: [
+        { code: `class CatClass { }`, errors: [{ message }] },
+    ],
+    valid: [
+        { code: `class { }` },
+        { code: `class Cat { }` },
+    ],
+});
+```
+
 Note:
-
-
+Как тестировать?
+В ESLint уже есть вся инфраструктура для тестирования.
+Импортируем класс RuleTester, задаем настройки и заупускаем.
+ruleTester.run принимает в качестве параметров:
+имя теста, как правило это имя правила, само правило - его реализацию, примеры кодов с неправильной реализацией,
+т.е. на эти примеры правило должно сработать, правильный код - на это примеры, правило срабатывать не должно.
 
 ## Example 2
 
