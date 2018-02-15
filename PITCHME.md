@@ -320,7 +320,9 @@ Note:
 В вызов report надо передать объект fix, это функция которая принимает объект, и у этого объекта есть API для преобразования кода.
 https://eslint.org/docs/developer-guide/working-with-rules#applying-fixes
 
-+++
+---
+
+## Fixer API
 
 * https://eslint.org/docs/developer-guide/working-with-rules#applying-fixes
 
