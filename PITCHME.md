@@ -308,7 +308,7 @@ ruleTester.run принимает в качестве параметров:
 
 ## Fixable code
 
-+++?code=src/rules/class-name.js
++++?code=src/rules/class-name.js&lang=javascript
 
 @[10]
 @[11]
