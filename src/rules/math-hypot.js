@@ -2,7 +2,8 @@ function create(context) {
     let mathSqrt = null;
     return {
         CallExpression(node) {
-            if (node.callee && node.callee.object.name === 'Math' && node.callee.property.name === 'sqrt') {
+            if (node.callee && node.callee.object.name === 'Math' && node.callee.property.name === 'sqrt'
+                && node.callee.arguments.length === 1) {
                 mathSqrt = node;
             }
         },
