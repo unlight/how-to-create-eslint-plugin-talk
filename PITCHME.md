@@ -319,8 +319,6 @@ context.report({
 ```
 
 +++
-
-+++
 ```ts
 context.report({
     node: node.id,
