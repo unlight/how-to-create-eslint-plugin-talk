@@ -44,18 +44,18 @@ Note:
    --> AST (Abstract Syntax Tree)
 
 Note:
-Чтобы без проблема проанализировать код, из него получить синтаксическое дерево (AST - Abstract Syntax Tree).
+Чтобы проанализировать код, из него получить синтаксическое дерево (AST - Abstract Syntax Tree).
 Это происходит в 2 этапа:
 1. Токенизация, на этом этапе текст разбивается на тОкены
 2. Парсинг, из тОкенов и каких-то правил синтаксиса строится AST
 
 ---
 
-### Types of AST
+### AST Types
 
 1. ESTree and it's variations (acorn, esprima, flow, etc.)
-2. Typescript
-3. Other
+2. TypesSript
+3. Others
 
 Note:
 Есть много различных парсеров и на выходе получаются разные типы деревьев.
@@ -64,7 +64,7 @@ ESLint использует парсер ESpree.
 Other - traceur, uglifyjs
 
 ---
-## AST
+## AST Example
 
 ```js
 const answer = Math.sqrt(a + 1)
