@@ -308,12 +308,42 @@ ruleTester.run принимает в качестве параметров:
 
 ## Fixable code
 
-+++?code=src/rules/class-name.js&lang=javascript
++++
+```ts
+context.report({
+    node: node.id,
+    message: 'Do not use `Class` suffix in class names',
+    fix: (fixer) => {
+    }
+});
+```
 
-@[10]
-@[11]
-@[12-13]
-@[10-13]
++++
+
++++
+```ts
+context.report({
+    node: node.id,
+    message: 'Do not use `Class` suffix in class names',
+    fix: (fixer) => {
+        const newName = node.id.name.slice(0, -5);
+    }
+});
+```
+
++++
+
+```ts
+context.report({
+    node: node.id,
+    message: 'Do not use `Class` suffix in class names',
+    fix: (fixer) => {
+        const newName = node.id.name.slice(0, -5);
+        const range = node.id.range;
+        return fixer.replaceTextRange(range, newName);
+    }
+});
+```
 
 Note:
 В ESLint есть возможность автоматического вычинивания, не у всех правил это есть, потому что не всегда это возможно.
