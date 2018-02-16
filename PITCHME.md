@@ -54,7 +54,7 @@ Note:
 ### AST Types
 
 1. ESTree and it's variations (acorn, esprima, flow, etc.)
-2. TypeSript
+2. TypeScript
 3. Others
 
 Note:
