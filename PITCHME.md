@@ -342,8 +342,8 @@ context.report({
     }
 });
 ```
-API:
-* https://eslint.org/docs/developer-guide/working-with-rules#applying-fixes
+API:  
+https://eslint.org/docs/developer-guide/working-with-rules#applying-fixes
 
 Note:
 В ESLint есть возможность автоматического вычинивания, не у всех правил это есть, потому что не всегда это возможно.
