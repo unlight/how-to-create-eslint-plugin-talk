@@ -1,6 +1,6 @@
 import { Creature } from './creature';
 
-export class CatClass extends Creature {
+export class Cat extends Creature {
 
     sleep() {
         console.log('sleeping...');

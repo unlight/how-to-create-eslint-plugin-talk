@@ -371,6 +371,14 @@ Note:
 
 ---
 
+## What is not covered
+
+* [context.getSourceCode()](https://eslint.org/docs/developer-guide/working-with-rules#contextgetsourcecode)
+* [Code Path Analysis](https://eslint.org/docs/developer-guide/code-path-analysis)
+* [Processors/Configs in Plugins](https://eslint.org/docs/developer-guide/working-with-plugins)
+
+---
+
 ## Links
 
 * https://eslint.org/docs/developer-guide/working-with-plugins
