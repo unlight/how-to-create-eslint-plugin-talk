@@ -116,3 +116,9 @@ html:-moz-full-screen-ancestor {
 .reveal pre {
     margin: 0 !important;
 }
+
+li > .code {
+    background: #eee;
+    padding: 0px 8px;
+    border-radius: 5px;
+}

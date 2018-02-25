@@ -200,7 +200,7 @@ ESLint парсит код, создает AST, а дальше модуль EST
 ## Adding custom rule
 
 1. By creating plugin (eslint-plugin-myawesomeplugin) 
-2. `rulePaths` config or `--rulesdir` in cli mode
+2. `--rulesdir` in cli mode
 
 Note:
 Как подключить его в проект.
@@ -353,22 +353,9 @@ ruleTester.run принимает в качестве параметров:
 Этот файл надо запустить с помощью тест раннера - мока.
 
 ---
-
 ## Example 2
 
-+++?code=src/example/math.service.ts&lang=typescript
-
-@[5](Pass dependency through constructor)
-@[13](Use Math.hypot())
-
-Note:
-Пример, у нас есть такой класс. Используется в приложении типа калькулятор.
-Что в этом коде не так? Какая здесь проблема?
-Нарушение SOLID - D.
-Если мы начнем тестировать, что произойдет, у нас в консоль или куда настроен, начнут сыпаться сообщения.
-Хорошо если если только в консоль, а то может и в файловую систему или системный журнал.
-Т.е. вместе с нашим классом мы будем тестировать еще этот логгер.
-2. Вот эта может быть записана как Math.hypot()
+* max-method-lines
 
 ---
 
