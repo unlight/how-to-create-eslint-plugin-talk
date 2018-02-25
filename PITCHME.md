@@ -359,12 +359,10 @@ ruleTester.run принимает в качестве параметров:
 ```
 rules: {
     "method-lines": [1, { max: 5} ]
-},
+}
 ```
 
----?code=src/rules/method-lines.js
-
-
++++?code=src/rules/method-lines.js
 
 ---
 
