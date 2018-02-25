@@ -8,6 +8,7 @@
     "test:tight-coupling:w": "mocha --watch src/tests/tight-coupling.spec.js",
     "eslint:example": "eslint --ext=ts src/example",
     "eslint:example:class-name": "eslint --ext=ts --rulesdir=src/rules/ --rule \"class-name: 1\" src/example/cat.class.ts",
+    "eslint:example:max-method-lines": "eslint --ext=ts --rulesdir=src/rules/ --rule \"max-method-lines: [1, {max: 5}]\" src/example/cat.class.ts",
     "eslint:example:tight-coupling": "eslint --ext=ts --rulesdir=src/rules/ --rule \"tight-coupling: [1, \"log4js\"]\" src/example/math.service.ts"
   },
   "keywords": [],
