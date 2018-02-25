@@ -353,10 +353,18 @@ ruleTester.run принимает в качестве параметров:
 Этот файл надо запустить с помощью тест раннера - мока.
 
 ---
-## Example 2
+## Example 2 
 
-* Limit method lines
-* Configurable value
+#### Rule: Method Lines
+```
+rules: {
+    "method-lines": [1, { max: 5} ]
+},
+```
+
+---?code=src/rules/method-lines.js
+
+
 
 ---
 
