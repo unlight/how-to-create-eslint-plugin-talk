@@ -365,7 +365,9 @@ rules: {
 ---
 ```js
 function create(context) {
+    
     const [{ max }] = context.options;
+    
     return {
         // ...
     };
