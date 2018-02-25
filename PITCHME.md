@@ -355,7 +355,8 @@ ruleTester.run принимает в качестве параметров:
 ---
 ## Example 2
 
-* max-method-lines
+* Limit method lines
+* Configurable value
 
 ---
 
