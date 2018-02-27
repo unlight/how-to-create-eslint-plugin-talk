@@ -117,8 +117,8 @@ html:-moz-full-screen-ancestor {
     margin: 0 !important;
 }
 
-.reveal section ol li > .code {
-    background: #eee !important;
-    padding: 0px 8px !important;
-    border-radius: 5px !important;
+.reveal section ol li > code {
+    background: #eee;
+    padding: 0px 8px;
+    border-radius: 5px;
 }
