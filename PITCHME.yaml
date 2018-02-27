@@ -5,7 +5,7 @@
 # https://github.com/gitpitch/gitpitch/wiki/Slideshow-Settings
 #
 theme : white
-theme-override : PITCHME.css
+theme-override : css/PITCHME.css
 highlight : atom-one-light
 # logo : assets/image/logo.png
 transition : none
