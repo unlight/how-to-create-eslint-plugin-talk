@@ -118,7 +118,7 @@ html:-moz-full-screen-ancestor {
 }
 
 .reveal li > .code {
-    background: #eee;
-    padding: 0px 8px;
-    border-radius: 5px;
+    background: #eee !important;
+    padding: 0px 8px !important;
+    border-radius: 5px !important;
 }
