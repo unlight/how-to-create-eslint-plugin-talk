@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic');
+
+/*
+ * GitPitch Slideshow Custom CSS Styling
+ *
+ * For details, visit Wiki:
+ * https://github.com/gitpitch/gitpitch/wiki/Slideshow-Custom-CSS
+ */
+
+body {
+  background: #fff;
+  background-color: #fff;
+}
+
+html:-webkit-full-screen-ancestor {
+  background: #fff;
+  background-color: #fff;
+}
+
+html:-moz-full-screen-ancestor {
+  background: #fff;
+  background-color: #fff;
+}
+
+.reveal pre {
+  width: 100%;
+  box-shadow : none;
+}
+
+.reveal pre code {
+  font-size: 1.2em;
+  line-height: 1.2;
+  max-height: 50vh !important;
+  border-radius: 10px;
+}
+
+.reveal .slides section .code-presenting-annotation {
+  color: white;
+  background: #1f1c18;
+  padding: 1px 15px;
+  border-radius: 15px;
+  opacity: 0.75 !important;
+  font-size: 50% !important;
+}
+
+.reveal p span.slide-title {
+  color: black;
+  padding: 4px 15px;
+  opacity: 0.75 !important;
+  border-radius: 15px;
+}
+
+.reveal a {
+    color: #e7ad52;
+}
+
+.reveal a:hover {
+    color: #f3d7ac;
+}
+
+.hljs {
+  background : none;
+}
+
+.white {
+  color: white;
+}
+
+#gp-logo img {
+  max-height: 2em;
+  max-width: none;
+}
+
+.gp-tip { font-size : 1.5em; }
+
+.gp-contact { font-size : 1.4em; }
+
+.gp-download { margin-left: 10px; }
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    text-transform: none;
+}
+
+#speaker-controls {
+    font-size: 1em !important;
+}
+
+.reveal .slides > section {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.reveal .slides {
+    text-align: left;
+}
+
+#abstract-syntax-tree + pre + pre code {
+  font-size: 0.9em;
+}
+
+#your-code-is-not-a-string + ol li > code {
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+.reveal section img {
+    max-height: 65vh;
+    border-width: 0px;
+    box-shadow: none;
+}
+
+.reveal pre {
+    margin: 0 !important;
+}
+
+.reveal li > .code {
+    background: #eee;
+    padding: 0px 8px;
+    border-radius: 5px;
+}
