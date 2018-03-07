@@ -9,7 +9,8 @@
     "eslint:example": "eslint --ext=ts src/example",
     "eslint:example:class-name": "eslint --ext=ts --rulesdir=src/rules/ --rule \"class-name: 1\" src/example/cat.class.ts",
     "eslint:example:method-lines": "eslint --ext=ts --rulesdir=src/rules/ --rule \"method-lines: [1, {max: 5}]\" src/example/cat.class.ts",
-    "eslint:example:tight-coupling": "eslint --ext=ts --rulesdir=src/rules/ --rule \"tight-coupling: [1, \"log4js\"]\" src/example/math.service.ts"
+    "eslint:example:tight-coupling": "eslint --ext=ts --rulesdir=src/rules/ --rule \"tight-coupling: [1, \"log4js\"]\" src/example/math.service.ts",
+    "eslint:d": "node --inspect-brk node_modules\\eslint\\bin\\eslint.js"
   },
   "keywords": [],
   "license": "ISC",
