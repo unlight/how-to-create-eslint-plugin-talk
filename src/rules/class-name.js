@@ -3,7 +3,7 @@ const create = (context) => ({
         if (node.id && node.id.type === 'Identifier'
             && node.id.name && node.id.name.endsWith('Class')) {
             context.report({
-                node: node,
+                node: node.id,
                 message: 'Do not use `Class` suffix in class names',
                 // fix: (fixer) => {
                 //     const newName = node.id.name.slice(0, -5);
