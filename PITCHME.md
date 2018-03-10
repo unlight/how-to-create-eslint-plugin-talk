@@ -322,6 +322,7 @@ context.report({
         return fixer.replaceTextRange(range, newName);
     }
 });
+```
 
 +++
 
