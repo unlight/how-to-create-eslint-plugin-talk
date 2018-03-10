@@ -1,9 +1,7 @@
 const create = (context) => ({
     ClassDeclaration(node) {
-        if (!node.id || node.id.type !== 'Identifier') {
-            return;
-        }
-        if (node.id.name && node.id.name.endsWith('Class')) {
+        if (node.id && node.id.type === 'Identifier'
+            && node.id.name && node.id.name.endsWith('Class')) {
             context.report({
                 node: node,
                 message: 'Do not use `Class` suffix in class names',
